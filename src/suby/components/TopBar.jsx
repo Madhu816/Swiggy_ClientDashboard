@@ -13,7 +13,7 @@ const TopBar = () => {
                     <input type="text" placeholder="search..." />
                 </div>
 <a
-  href="http://localhost:5174/"
+  href="https://swiggy-dashboard-black.vercel.app/" target="_blank" 
   style={{ color: "red", textDecoration: "none" }}
   className="userAuth"
 >
