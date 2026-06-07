@@ -1,0 +1,369 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.topBarSection {
+  /* border: 1px solid saddlebrown; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 70px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  position: fixed;
+  width: 90%;
+  z-index: 100;
+  border-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #569c7b;
+}
+
+.searchBar {
+  width: 25vw;
+  height: 2rem;
+}
+
+.searchBar input {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  padding-left: 20px;
+  /* display: flex;
+    text-align: center; */
+}
+
+/* for static images */
+.itemSection {
+  display: flex;
+  width: 100%;
+  margin-top: 90px;
+}
+/* //parent */
+.gallery {
+  width: 120px;
+}
+/* childern */
+.gallery img {
+  width: 100%;
+}
+
+/* apply padding for itemsdisplay,firmColl,chain,productMenu */
+.landingSection {
+  padding: 0px 100px;
+}
+
+/* chain section */
+.chainSection {
+  /* border: 1px solid rgb(139, 46, 46); */
+  display: flex;
+  overflow-x: hidden;
+}
+
+.venderBox img {
+  width: 350px;
+  height: 200px;
+  margin-right: 20px;
+  /* object-fit: cover; */
+  border-radius: 10px;
+  /* padding:5px 5px; */
+  /* border: 2px solid rgb(255, 0, 0); */
+}
+
+.btnSection {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-end;
+  /* border: none; */
+}
+
+.btnIcons {
+  border: 1px solid seagreen;
+  padding: 0px 5px;
+  margin: 2px 10px;
+  border-radius: 50%;
+  font-size: 30px;
+  position: relative;
+  top: 40px;
+  font-weight: bolder;
+}
+
+.btnSection button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.btnIcons:hover {
+  transform: scale(1.1);
+  /* animation on hover */
+}
+
+
+/* collection of firms */
+.firmSection {
+  /* border: 1px solid rgb(34, 178, 44); */
+  /* grid takes row and coloumn and flex takes only one row..or one coloumn */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+ }
+
+.filterButton {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.filterButton button {
+  width: 10rem;
+  height: 30px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.activeButton {
+  background-color: #1dbf73;
+  color: white;
+}
+
+.firmGroup img {
+  width: 260px;
+  height: 180px;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 10px;
+  /* border: 2px solid rgb(255, 0, 0); */
+}
+
+.firmDetails {
+  /* border: 1px solid rebeccapurple; */
+  width: 100%;
+  max-width: 85%;
+  padding-left: 10px;
+}
+
+.firmImageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  /* adjust as needed */
+  
+}
+
+.firmImageContainer img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.firmOffer {
+  border:1px solid orange;
+  width: 100%;
+  max-width: 25%;
+  /*  insed the parent box*/
+  position: absolute; 
+  bottom: 10px;
+  left: 10px;
+  background-color: red; 
+  color: white;
+  padding: 4px 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.firmArea {
+  color: gray;
+  text-transform:capitalize;
+
+}
+
+/* product Menu */
+
+.productSection {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 180px;
+  margin-top: 20px;
+
+}
+
+.productSection {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 180px;
+  background-color: whitesmoke;
+
+}
+
+.productBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d3d3d3;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0px;
+
+}
+
+.productGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productGroup img {
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 1px solid #eee;
+}
+
+.addbtn {
+  border: none;
+  background-color: #1dbf73;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px 20px;
+  cursor: pointer;
+  /* transition: background-color 0.3s ease; */
+}
+
+.addbtn:hover {
+  background-color: #17a362;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+/* loading-section */
+.loadingSection {
+  border: 2px solid rgb(139, 103, 19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.productMenuFirmName {
+  /* border: 1px solid firebrick; */
+  background-color: orange;
+  padding: 10px 0px;
+  border-radius: 16px;
+  color: black;
+}
+
+/* responsivee */
+
+@media (max-width: 576px) {
+  .topBarSection {
+    padding:0px 30px;
+  }
+  .searchBar{
+    margin-bottom:6px;
+  }
+  .landingSection{
+    padding:0px 10px;
+  }
+.itemSection{
+  border:2px solid green;
+} 
+.itemSection img{
+  width:30px;
+}
+  .chainSection {
+    overflow-x: auto;
+    padding: 10px 0;
+    border:1px solid red;
+  }
+  .chainSection img{
+    width: 200px;
+    height:120px;
+  }
+  
+  h2{
+    font-size:15px;
+  }
+
+  .btnIcons {
+    font-size: 15px;
+    margin-bottom:10px;
+  }
+  .filterButton button{
+    font-size:10px;
+    border:1px solid violet
+  }
+  .firmSection {
+    /* margin-top:100px; */
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 0;
+    border:1px solid pink;
+    justify-items:center;
+  }
+
+  .firmGroup img {
+     width: 250px;
+    height:150px;
+  }
+
+ 
+  .firmDetails {
+    text-align:center;
+  }
+
+  .productSection {
+    padding: 40px 30px;
+  }
+
+  .productMenuFirmName {
+    font-size: 17px;
+  }
+  .productBox {
+    border:1px solid red;
+    font-size:13px;
+    padding: 20px 10px;
+    display:flex;
+    justify-content:space-between;
+}
+  .productItems{
+    /* border: 1px solid blue; */
+    margin-top:-20px;
+  }
+
+
+  .productGroup img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .addbtn {
+    /* width: 50px;
+    text-align: center;
+    margin-top: 10px; */
+  }
+
+
+
+  .firmOffer {
+    font-size: 12px;
+    padding: 3px 6px;
+    bottom: 5px;
+    left: 5px;
+  } 
+}
